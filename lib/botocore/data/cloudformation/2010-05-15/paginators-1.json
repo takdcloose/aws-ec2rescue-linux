@@ -23,7 +23,14 @@
         "NotificationARNs",
         "RollbackConfiguration",
         "Capabilities",
-        "Tags"
+        "Tags",
+        "ParentChangeSetId",
+        "IncludeNestedStacks",
+        "RootChangeSetId",
+        "OnStackFailure",
+        "ImportExistingResources",
+        "StackDriftStatus",
+        "DeploymentMode"
       ]
     },
     "DescribeStackEvents": {
@@ -84,6 +91,53 @@
       "input_token": "NextToken",
       "output_token": "NextToken",
       "result_key": "Imports"
+    },
+    "ListTypes": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "TypeSummaries"
+    },
+    "ListGeneratedTemplates": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "Summaries"
+    },
+    "ListResourceScanRelatedResources": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "RelatedResources"
+    },
+    "ListResourceScanResources": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "Resources"
+    },
+    "ListResourceScans": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "ResourceScanSummaries"
+    },
+    "ListStackRefactorActions": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "StackRefactorActions"
+    },
+    "ListStackRefactors": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "StackRefactorSummaries"
+    },
+    "DescribeEvents": {
+      "input_token": "NextToken",
+      "output_token": "NextToken",
+      "result_key": "OperationEvents"
     }
   }
 }
